@@ -24,7 +24,7 @@ class CreateView(SuccessMessageMixin, CreateView):
     model = Movie
     template_name: str = 'main/new.html'
     fields = ('banner', 'title', 'description')
-    success_message = "%(field)s adicionado com sucesso!"
+    success_message = "'%(field)s' adicionado com sucesso!"
 
     def get_success_message(self, cleaned_data):
         return self.success_message % dict(
@@ -36,7 +36,7 @@ class UpdateView(SuccessMessageMixin, UpdateView):
     model = Movie
     template_name: str = 'main/edit.html'
     fields = ('banner', 'title', 'description')
-    success_message = "%(field)s alterado com sucesso!"
+    success_message = "'%(field)s' alterado com sucesso!"
 
     def get_success_message(self, cleaned_data):
         return self.success_message % dict(
@@ -48,7 +48,7 @@ class DeleteView(SuccessMessageMixin, DeleteView):
     model = Movie
     template_name: str = 'main/delete.html'
     success_url = reverse_lazy('index')
-    success_message = "%(field)s deletado com sucesso!"
+    success_message = "'%(field)s' deletado com sucesso!"
 
     def get_success_message(self, cleaned_data):
         return self.success_message % dict(

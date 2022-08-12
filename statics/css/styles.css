@@ -82,3 +82,13 @@ footer {
 .footer_icons button:hover {
   transform: scale(0.97);
 }
+
+/* mensagens */
+.messages li {
+  background-color: #4ade80;
+  border-radius: 4px;
+  padding: 0.8rem;
+  color: #181818;
+  font-size: 1rem;
+  font-weight: 600;
+}
