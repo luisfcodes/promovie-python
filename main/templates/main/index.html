@@ -13,7 +13,7 @@
         <ul>
             {% for movie in latest_movie_list %}
             <li class="movie_item">
-                <a href="{{ movie.get_absolute_url }}" style="text-decoration: none;">
+                <a href="{{ movie.get_absolute_url }}">
                     <img src="../../../media/{{movie.banner}}" alt="{{ movie.title }}" class="movie_banner">
                     <p>{{ movie.title }}</p>
                 </a>

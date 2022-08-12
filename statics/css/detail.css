@@ -33,6 +33,20 @@
     font-size: 1rem;
     transition: all 0.2s;
     font-weight: 600;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.content_buttons img {
+    width: 20px;
+    height: 20px;
+}
+
+.content_buttons span {
+    margin-top: 4px;
 }
 
 .content_buttons button:hover {

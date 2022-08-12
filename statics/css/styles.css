@@ -38,14 +38,6 @@ header{
   align-items: center;
 }
 
-.logo {
-  background-color: #fbbf24;
-  padding: 1rem;
-  border-radius: 10px;
-  color: #181818;
-  font-weight: bold;
-}
-
 .button_newFilm {
   padding: 0.5rem 1rem;
   border-radius: 8px;
@@ -69,9 +61,24 @@ main {
 
 footer {
   min-height: 80px;
+}
+
+.footer_container {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   font-size: 0.8rem;
   color: #fbbf24;
+  gap: 0.3rem;
+}
+
+.footer_icons button {
+  background-color: transparent;
+  border: none;
+  transition: all 0.2s;
+}
+
+.footer_icons button:hover {
+  transform: scale(0.97);
 }

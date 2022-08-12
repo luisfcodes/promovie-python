@@ -15,17 +15,46 @@
 <body>
   <header>
       <div>
-        <a href="/"><span class="logo">PROmovie</span></a>
+        <a href="/"><img src="{% static 'images/logo.png' %}" alt="Logo" class="logo"></a>
       </div>
       <a href="{% url 'new' %}">
-        <button class="button_newFilm">+ Adicionar Filme</button>
+        <button class="button_newFilm">Adicionar Filme</button>
       </a>
   </header>
   <main>
     {% block content %} {% endblock content %}
   </main>
   <footer>
-    <p>Copyright © 2022-2022 Luis Fernando da Silva - Todos os direitos reservados</p>
+    <div class="footer_container">
+      <div class="footer_icons">
+        <a href="https://github.com/luisfcodes" target="_blank">
+          <button>
+            <img src="{% static 'images/github_icon.png' %}" alt="Ícone do Github">
+          </button>
+        </a>
+        <a href="https://www.linkedin.com/in/luisfcodes/" target="_blank">
+          <button>
+            <img src="{% static 'images/linkedin_icon.png' %}" alt="Ícone do Linkedin">
+          </button>
+        </a>
+        <a href="https://www.instagram.com/luisfcodes/" target="_blank">
+          <button>
+            <img src="{% static 'images/instagram_icon.png' %}" alt="Ícone do Instagram">
+          </button>
+        </a>
+        <a href="https://twitter.com/luisfcodes" target="_blank">
+          <button>
+            <img src="{% static 'images/twitter_icon.png' %}" alt="Ícone do Twitter">
+          </button>
+        </a>
+        <a href="mailto:luis.silva9902@gmail.com?" target="_blank">
+          <button>
+            <img src="{% static 'images/gmail_icon.png' %}" alt="Ícone do Gmail">
+          </button>
+        </a>
+      </div>
+      <p>Copyright © 2022-2022 Luis Fernando da Silva - Todos os direitos reservados</p>
+    </div>
   </footer>
 </body>
 </html>
