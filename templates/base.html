@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  {% block styles %} {% endblock styles %}
+  <title>{% block title %} {% endblock title %}</title>
+</head>
+<body>
+  <header>
+      <div>
+        <a href="/"><span class="logo">PROmovie</span></a>
+      </div>
+      <a href="{% url 'new' %}">
+        <button class="button_newFilm">+ Adicionar Filme</button>
+      </a>
+  </header>
+  <main>
+    {% block content %} {% endblock content %}
+  </main>
+  <footer>
+    <p>Copyright © 2022-2022 Luis Fernando da Silva - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

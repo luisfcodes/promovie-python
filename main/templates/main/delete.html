@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %} PROmovie | Deletar Filme {% endblock title %}
+{% block content %}
+    <h1>Deletar filme</h1>
+    <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+      <p>Deseja realmente excluir o filme "{{movie.title}}"?</p>
+      <input type="submit" value="Confirmar">
+    </form>
+    <a href="{{ movie.get_absolute_url }}"><button>Cancelar</button></a>
+{% endblock content %}
